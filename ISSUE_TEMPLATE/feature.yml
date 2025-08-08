@@ -1,0 +1,30 @@
+name: Feature Request
+description: Quick template for dev-focused features
+title: "[Feature] "
+labels: ["feature"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What
+      description: 1–2 sentence description of the change.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: Quick reason for doing it (optional if obvious).
+  - type: textarea
+    id: Requirements
+    attributes:
+      label: Requirements
+      description: Bullet list of clear end states.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Any tech hints, links, or constraints.
+
