@@ -1,0 +1,49 @@
+name: Bug / Error Fix
+description: Minimal template for logging and fixing a bug
+title: "[Fix] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What’s broken
+      description: Short description of the bug or error.
+      placeholder: e.g., Dark mode toggle resets after page refresh.
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Clear steps to see the issue.
+      placeholder: |
+        1. Go to settings
+        2. Enable dark mode
+        3. Refresh the page
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+      description: What should happen instead.
+      placeholder: e.g., Dark mode stays enabled after refresh.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+      description: What actually happens.
+      placeholder: e.g., Theme resets to light mode.
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / suspected cause
+      description: Any logs, error messages, or suspected file/function.
+      placeholder: e.g., Missing localStorage save on theme toggle.
+
